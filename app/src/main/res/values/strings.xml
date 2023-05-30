@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Perfect Place Travel App</string>
+    <string name="terms_condition"><![CDATA[Terms & Condition]]></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_how_are_you_let_s_go_on_vacation_i_have_exciting_vacation_plans">Hello, how are you? Let\'s go on vacation, I have exciting vacation plans!</string>
+</resources>

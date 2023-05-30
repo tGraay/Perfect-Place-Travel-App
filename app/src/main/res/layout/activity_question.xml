@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question_Activity"
+    android:background="@drawable/ic_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Question"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/text_indicate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="of"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginLeft="7dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginLeft="7dp"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/ic_8_line"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_card_group">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Question"
+                    android:textColor="@color/orange_dark"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/text_indicate_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@color/orange_dark"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="of"
+                    android:textColor="@color/orange_dark"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8"
+                    android:textColor="@color/orange_dark"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/question_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When would you like to leave?"
+                android:textColor="@color/light_black"
+                android:textSize="28sp"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/question_1_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_rectangle_3"
+                android:text="Select Date"
+                android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+                android:padding="15dp"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/question_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What climates do you like?"
+                android:textColor="@color/light_black"
+                android:textSize="28sp"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/question_2_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_rectangle_3"
+                android:text="Cold"
+                android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+                android:padding="15dp"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/question_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What activities do you like?"
+                android:textColor="@color/light_black"
+                android:textSize="28sp"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/line_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_group_5">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Snowsports"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:layout_gravity="center"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_tick_mark"
+                                android:layout_marginLeft="10dp"/>
+
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_rectangle_12"
+                        android:layout_marginLeft="15dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Watersports"
+                            android:textColor="@color/orange_dark"/>
+
+                    </FrameLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp">
+
+                    <FrameLayout
+                        android:layout_width="69dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_rectangle_12"
+                        android:layout_marginLeft="15dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Beach"
+                            android:textColor="@color/orange_dark"/>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_rectangle_12"
+                        android:layout_marginLeft="15dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Mountains"
+                            android:textColor="@color/orange_dark"/>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_rectangle_12"
+                        android:layout_marginLeft="15dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="City"
+                            android:textColor="@color/orange_dark"/>
+
+                    </FrameLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp">
+
+                    <FrameLayout
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_rectangle_12"
+                        android:layout_marginLeft="15dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Culture"
+                            android:textColor="@color/orange_dark"/>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_rectangle_12"
+                        android:layout_marginLeft="15dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Wildife"
+                            android:textColor="@color/orange_dark"/>
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_rectangle_12"
+                        android:layout_marginLeft="15dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Road Trips"
+                            android:textColor="@color/orange_dark"/>
+
+                    </FrameLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/question_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What's your budget?"
+                android:textColor="@color/light_black"
+                android:textSize="28sp"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/question_4_seekbar_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <SeekBar
+                    android:id="@+id/question_4_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:max="100"
+                    android:indeterminate="false"
+                    android:progress="50"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/ic_seekbar"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 $"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_alignParentStart="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5000 $"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/question_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destination Popularity"
+                android:textColor="@color/light_black"
+                android:textSize="28sp"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/question_5_seekbar_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <SeekBar
+                    android:id="@+id/question_5_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:max="100"
+                    android:indeterminate="false"
+                    android:progress="50"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/ic_seekbar"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="Off the beatentrack"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_alignParentStart="true"/>
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="Well trodden"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textAlignment="textEnd"
+                        android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/question_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How far away from home?"
+                android:textColor="@color/light_black"
+                android:textSize="28sp"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/question_6_seekbar_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <SeekBar
+                    android:id="@+id/question_6_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:max="100"
+                    android:indeterminate="false"
+                    android:progress="50"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/ic_seekbar"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="Not Fair"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_alignParentStart="true"/>
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="To Fair"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textAlignment="textEnd"
+                        android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/question_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How many adults are travelling?"
+                android:textColor="@color/light_black"
+                android:textSize="28sp"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"/>
+
+            <FrameLayout
+                android:id="@+id/frame_Q7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_rectangle_44"
+                android:layout_marginTop="60dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_incri"
+                        android:layout_margin="5dp"
+                        android:layout_alignParentStart="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_20sdp"
+                            android:layout_gravity="center"/>
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textSize="20sp"
+                        android:layout_centerInParent="true"/>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_incri"
+                        android:layout_margin="5dp"
+                        android:layout_alignParentEnd="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_20sdp"
+                            android:layout_gravity="center"/>
+
+                    </FrameLayout>
+                </RelativeLayout>
+
+
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/question_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How many children are travelling?"
+                android:textColor="@color/light_black"
+                android:textSize="28sp"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"/>
+
+            <FrameLayout
+                android:id="@+id/frame_Q8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_rectangle_44"
+                android:layout_marginTop="60dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_incri"
+                        android:layout_margin="5dp"
+                        android:layout_alignParentStart="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_20sdp"
+                            android:layout_gravity="center"/>
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textSize="20sp"
+                        android:layout_centerInParent="true"/>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_incri"
+                        android:layout_margin="5dp"
+                        android:layout_alignParentEnd="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_20sdp"
+                            android:layout_gravity="center"/>
+
+                    </FrameLayout>
+                </RelativeLayout>
+
+
+
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+        <FrameLayout
+            android:id="@+id/btn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_btn"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/btn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_btn"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                />
+
+
+
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/btn_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_btn"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                />
+
+
+
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/btn_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_btn"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                />
+
+
+
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/btn_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_btn"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                />
+
+
+
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/btn_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_btn"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                />
+
+
+
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/btn_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_btn"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+               />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/btn_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_btn"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                />
+
+
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skip for now"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

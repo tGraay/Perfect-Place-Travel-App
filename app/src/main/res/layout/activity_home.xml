@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame"/>
+
+    <!--    <androidx.viewpager2.widget.ViewPager2-->
+<!--        android:id="@+id/place_view_pager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginBottom="24sp"-->
+<!--        android:paddingStart="@dimen/_50sdp"-->
+<!--        android:paddingEnd="@dimen/_50sdp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/more_pick_text"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/smooth_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@color/background"
+        app:iconSize="@dimen/_18sdp"
+        app:iconTint="@color/bottom_bar_icon_tint"
+        app:iconTintActive="@color/bottom_bar_icon_tint_active"
+        app:indicatorColor="@color/bottom_bar_indicatore"
+        app:indicatorRadius="@dimen/_8sdp"
+        app:menu="@menu/bottom_nav_menu"
+        app:textColor="@color/bottom_bar_text_color"
+        app:textSize="@dimen/_10sdp" />
+
+
+</RelativeLayout>
